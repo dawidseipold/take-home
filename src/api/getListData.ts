@@ -6,6 +6,8 @@ export type ListItem = {
   title: string;
   description: string;
   isVisible: boolean;
+  deleted?: boolean;
+  expanded?: boolean;
 };
 
 export type DeletedListItem = Omit<ListItem, "description">;
